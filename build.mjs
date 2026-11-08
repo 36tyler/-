@@ -1,0 +1,10 @@
+import {readFile,writeFile,mkdir,copyFile} from 'node:fs/promises';
+await mkdir(new URL('./dist/server',import.meta.url),{recursive:true});
+const helpers=(await readFile(new URL('./text-colors.mjs',import.meta.url),'utf8')).replaceAll('export function','function');
+let html=await readFile(new URL('./public/index.html',import.meta.url),'utf8');
+html=html.replace(/\/\/ TEXT_COLOR_HELPERS_START[\s\S]*?\/\/ TEXT_COLOR_HELPERS_END/,()=> '// TEXT_COLOR_HELPERS_START\n'+helpers+'\n// TEXT_COLOR_HELPERS_END');
+await writeFile(new URL('./public/index.html',import.meta.url),html);
+await writeFile(new URL('./page.mjs',import.meta.url),'export const PAGE = '+JSON.stringify(html)+';\n');
+for(const name of ['uploads.mjs','text-colors.mjs','page.mjs'])await copyFile(new URL('./'+name,import.meta.url),new URL('./dist/server/'+name,import.meta.url));
+await copyFile(new URL('./worker.mjs',import.meta.url),new URL('./dist/server/index.js',import.meta.url));
+console.log('Built dist/server/index.js');

@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.wrangler/
+.local/
+.dev.vars*
+.env*
+!.env.example
+page.mjs
+*.log
+.DS_Store

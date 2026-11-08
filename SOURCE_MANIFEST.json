@@ -1,0 +1,28 @@
+{
+  "name": "SHUFFLE STUDIO GitHub source",
+  "version": "1.0.0",
+  "files": {
+    ".env.example": "42246bbefb7979b4f394b6e5dd65429dc829434297975875ee7ad7f49ac1e989",
+    ".gitattributes": "055fd9e4a3b3062c8fd7d9238f107c6055bb3d7f1e74cb2c3d55c488cd9eb4e0",
+    ".github/workflows/deploy-cloudflare.yml": "eefaf958ebfe6ab3379c4fca8962f506c044752e180273d48233ee0e5fd0c393",
+    ".github/workflows/deploy-pages-preview.yml": "3680c02ca199f05e30856f8cc04ec905d0b44a3264e24b7db4983b0ff5a0bedc",
+    ".gitignore": "cdfe87a25bb28c5a7ce8d65017c82a9d6b3294f57ae126f8677297b38d4f528c",
+    "README.md": "7e39e20ab1c13d6f41373890417197b4f21c955cce7dcdfc7743fecd0d5057e4",
+    "build.mjs": "9afd2da97498e84d2fe36fdb9e52f8402e3b64475b25faf014fb7d51e549c5b5",
+    "local-server.mjs": "143c10c6a136c132c3364898b1f3b2ee16983845650a1fb9c5336509df8fb0d5",
+    "local-storage.mjs": "3105cfd0b38f6591c6dc47bf3e047e8c8c857c84bc842a1f0dd841d729b3dac4",
+    "package-lock.json": "91cad9235875f968a037d7401daf6b3c82394f2f5bf063391a1c639b54783673",
+    "package.json": "95ff03ec8653ea02a7dd2da4092d01c7de7507df8269c5757bcd48dba3e2d01e",
+    "preview.html": "07bc553f7484de667f65b3cc8021f6d09f3d688462efc6d46490ee4d41054537",
+    "public/index.html": "ddd9b51b08fd2974a5ce036a302ef54a0d346fa532cd4e9a56f91a225c6a6642",
+    "scripts/build-pages.mjs": "2931130363d05f081c5776942962b8a6a36a1bee93092ce5a67437d22fe33374",
+    "scripts/configure-secrets.mjs": "80d65a1da28c92e9c1d01f453bd17df7dfe11cf23636e7496c0d1f434c2cec10",
+    "scripts/github-secrets.mjs": "ffeff541d26111e6e15e6e0ea1aa4203314c8cb2d9ed53609ddfadf81ebb102a",
+    "setup.mjs": "9ddb9d91455ea7bfd1022d328ddeb603be95d0a4d130cec48fa2e6d4c942bf67",
+    "test.mjs": "6ea8f5b6d424748aedae50de638248d5ae22939f36f6ab3469bf727e432c010d",
+    "text-colors.mjs": "f3d035ed827ef27b9778ab22a76d719b697d0717f9a9d88fcc4a4d872d132673",
+    "uploads.mjs": "44e755ebf8835c0fb1c7d9c7ca7ddd219c186120d77387414f11c1cf5d7715d5",
+    "worker.mjs": "6f947740f273122156693b3e161224b9edf258fd8b506b6d33098029abf5d214",
+    "wrangler.jsonc": "2e2a16c46646765eafb4045f066774c8bd78e56b7bb38aebb3e81af705aba08a"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "shuffle-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "build:pages": "node scripts/build-pages.mjs",
+    "setup": "node setup.mjs",
+    "start": "node local-server.mjs",
+    "dev": "wrangler dev",
+    "test": "node --test test.mjs",
+    "deploy": "npm run build && wrangler deploy",
+    "secrets:cloudflare": "node scripts/configure-secrets.mjs",
+    "secrets:github": "node scripts/github-secrets.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "wrangler": "4.158.0"
+  }
+}
